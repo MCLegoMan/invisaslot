@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+issueTrackerURL = "https://github.com/MCLegoMan/invisaslot"
+license = "LGPL-3.0-or-later"
+
+[[mods]]
+modId = "mclm_invisaslot"
+version = "1.0.0"
+displayName = "Invisaslot"
+authors = "MCLegoMan"
+description = '''
+Stops rendering item's in inventories
+'''
+logoFile = "assets/mclm_invisaslot/icon.png"
+
+[[dependencies.mclm_invisaslot]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mclm_invisaslot]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,1.21.1)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[mixins]]
+config = "mclm_invisaslot.mixins.json"

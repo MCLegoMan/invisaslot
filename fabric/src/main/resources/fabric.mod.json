@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "mclm_invisaslot",
+  "version": "${version}",
+  "name": "Invisaslot",
+  "description": "Stops rendering item's in inventories",
+  "authors": [
+    "MCLegoMan"
+  ],
+  "contact": {
+    "sources": "https://github.com/MCLegoMan/invisaslot"
+  },
+  "license": [
+    "LGPL-3.0-or-later"
+  ],
+  "icon": "assets/mclm_invisaslot/icon.png",
+  "environment": "*",
+  "entrypoints": {},
+  "mixins": [
+    "mclm_invisaslot.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": ">=1.21 <=1.21.1",
+    "java": ">=21"
+  }
+}

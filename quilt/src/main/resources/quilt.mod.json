@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "mclm_invisaslot",
+    "version": "${version}",
+    "metadata": {
+      "name": "Invisaslot",
+      "description": "Stops rendering item's in inventories",
+      "contributors": {
+        "MCLegoMan": "Lead Developer"
+      },
+      "icon": "assets/mclm_invisaslot/icon.png",
+      "license": [
+        "LGPL-3.0-or-later"
+      ],
+      "contact": {
+        "sources": "https://github.com/MCLegoMan/invisaslot"
+      }
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {},
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.21 <=1.21.1"
+      }
+    ]
+  },
+  "mixin": [
+    "mclm_invisaslot.mixins.json"
+  ]
+}
